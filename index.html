@@ -14,25 +14,44 @@
             text-align: center;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
         }
-        h1, h2 {
-            color: #2f4f4f;
+
+        /* Fundo escuro e seções destacadas */
+        .section {
+            background-color: #2f4f4f;
+            color: white;
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 1200px;
         }
+
+        /* Títulos */
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        /* Parágrafos */
         p {
-            color: #555;
+            color: #ddd;
             font-size: 1.2em;
         }
+
+        /* Menu de navegação */
         nav a {
             margin: 10px;
             text-decoration: none;
             font-size: 1.2em;
             color: #2f4f4f;
         }
+
         .benefits, .how-it-works, .testimonials {
             margin-top: 30px;
         }
+
         .button {
             padding: 15px 25px;
             background-color: #2f4f4f;
@@ -42,11 +61,15 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        /* Categorias de serviços */
         .categories {
             display: flex;
             justify-content: center;
             gap: 20px;
+            margin-top: 30px;
         }
+
         .category {
             background-color: #e0f7fa;
             padding: 15px;
@@ -54,60 +77,71 @@
             width: 200px;
             text-align: center;
         }
+
+        /* Seção com fundo claro */
+        .container {
+            width: 100%;
+            background-color: #f0f8ff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Fleelax!</h1>
-    <p>Plataforma para freelancers oferecerem seus serviços.</p>
+    <div class="container">
+        <h1>Bem-vindo ao Fleelax!</h1>
+        <p>Plataforma para freelancers oferecerem seus serviços.</p>
 
-    <!-- Menu de navegação -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="contato.html">Contato</a>
-    </nav>
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
 
-    <!-- Seção de Benefícios para Freelancers -->
-    <div class="benefits">
-        <h2>Por que ser um freelancer no Fleelax?</h2>
-        <p>Com o Fleelax, você tem liberdade para trabalhar de qualquer lugar, a qualquer hora. Conecte-se com clientes que precisam dos seus serviços e tenha acesso a uma rede de oportunidades incríveis.</p>
-    </div>
-
-    <!-- Seção de Categorias de Serviços -->
-    <div class="categories">
-        <div class="category">
-            <h3>Design Gráfico</h3>
-            <p>Criamos logos, banners e todo tipo de material visual!</p>
+        <!-- Seção de Benefícios para Freelancers -->
+        <div class="section benefits">
+            <h2>Por que ser um freelancer no Fleelax?</h2>
+            <p>Com o Fleelax, você tem liberdade para trabalhar de qualquer lugar, a qualquer hora. Conecte-se com clientes que precisam dos seus serviços e tenha acesso a uma rede de oportunidades incríveis.</p>
         </div>
-        <div class="category">
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de sites, lojas virtuais e aplicativos.</p>
+
+        <!-- Seção de Categorias de Serviços -->
+        <div class="categories">
+            <div class="category">
+                <h3>Design Gráfico</h3>
+                <p>Criamos logos, banners e todo tipo de material visual!</p>
+            </div>
+            <div class="category">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites, lojas virtuais e aplicativos.</p>
+            </div>
+            <div class="category">
+                <h3>Redação e Tradução</h3>
+                <p>Textos, artigos, tradução para vários idiomas.</p>
+            </div>
         </div>
-        <div class="category">
-            <h3>Redação e Tradução</h3>
-            <p>Textos, artigos, tradução para vários idiomas.</p>
+
+        <!-- Seção de Depoimentos -->
+        <div class="section testimonials">
+            <h2>O que nossos usuários dizem:</h2>
+            <p>"Fleelax foi fundamental para eu encontrar clientes e expandir meu trabalho como designer!" - Ana Souza</p>
+            <p>"Uma plataforma fácil de usar e com oportunidades de qualidade. Recomendo a todos!" - João Pereira</p>
+        </div>
+
+        <!-- Como Funciona -->
+        <div class="section how-it-works">
+            <h2>Como Funciona o Fleelax?</h2>
+            <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div>
+            <h2>Pronto para começar?</h2>
+            <button class="button" onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
         </div>
     </div>
-
-    <!-- Seção de Depoimentos -->
-    <div class="testimonials">
-        <h2>O que nossos usuários dizem:</h2>
-        <p>"Fleelax foi fundamental para eu encontrar clientes e expandir meu trabalho como designer!" - Ana Souza</p>
-        <p>"Uma plataforma fácil de usar e com oportunidades de qualidade. Recomendo a todos!" - João Pereira</p>
-    </div>
-
-    <!-- Como Funciona -->
-    <div class="how-it-works">
-        <h2>Como Funciona o Fleelax?</h2>
-        <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
-    </div>
-
-    <!-- Call to Action -->
-    <div>
-        <h2>Pronto para começar?</h2>
-        <button class="button" onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
-    </div>
-
 </body>
 </html>
