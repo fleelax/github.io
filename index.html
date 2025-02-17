@@ -137,6 +137,41 @@
         .client-form button:hover {
             background-color: #218838;
         }
+
+        /* Seção para clientes interessados em contratar freelancers */
+        .client-info {
+            background-color: #e7f5ff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-info h2 {
+            color: #0056b3;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .client-info p {
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .client-info button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .client-info button:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
@@ -150,6 +185,8 @@
             <a href="sobre.html">Sobre</a>
             <a href="servicos.html">Serviços</a>
             <a href="contato.html">Contato</a>
+            <a href="procurando-freelancer.html">Procurando Freelancer</a>
+            <a href="prestador-servico.html">Prestador de Serviço</a>
         </nav>
 
         <!-- Seção de Benefícios para Freelancers -->
@@ -199,24 +236,11 @@
             <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
         </div>
 
-        <!-- Formulário de cadastro para clientes -->
-        <div class="client-form">
-            <h2>Cadastre-se para contratar freelancers</h2>
-            <form action="#" method="POST">
-                <input type="text" name="nome" placeholder="Nome Completo" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="text" name="empresa" placeholder="Nome da Empresa" required>
-                <select name="servico" required>
-                    <option value="">Selecione um serviço</option>
-                    <option value="Design Gráfico">Design Gráfico</option>
-                    <option value="Desenvolvimento Web">Desenvolvimento Web</option>
-                    <option value="Redação e Tradução">Redação e Tradução</option>
-                    <option value="Consultoria Empresarial">Consultoria Empresarial</option>
-                    <option value="Marketing Digital">Marketing Digital</option>
-                    <option value="Fotografia">Fotografia</option>
-                </select>
-                <button type="submit">Cadastrar</button>
-            </form>
+        <!-- Seção para Clientes Contratarem Freelancers -->
+        <div class="client-info">
+            <h2>Está buscando um freelancer?</h2>
+            <p>No Fleelax, você encontra os melhores profissionais para os mais variados serviços. Cadastre-se agora e encontre o talento ideal para sua empresa!</p>
+            <button onclick="window.location.href='cadastro-cliente.html'">Cadastre-se para Contratar</button>
         </div>
 
         <!-- Call to Action -->
