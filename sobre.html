@@ -3,10 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre - Fleelax</title>
-  <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
+  <title>Fleelax - Sobre</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      background: #fff;
+      padding: 20px 0;
+      border-bottom: 3px solid #ff6f61;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2.6em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #6b5b95;
+      font-weight: 600;
+      padding: 5px 10px;
+      transition: color 0.3s ease, background 0.3s ease;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      color: #fff;
+      background: #6b5b95;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ff6f61, #f7b733);
+      padding: 70px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    .hero h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+    }
+    .hero .button {
+      padding: 15px 30px;
+      background-color: #fff;
+      color: #ff6f61;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    .hero .button:hover {
+      transform: scale(1.05);
+    }
+
+    .about-content {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .about-content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .about-content p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .cta {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .cta h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .cta .button {
+      padding: 15px 30px;
+      background-color: #6b5b95;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .cta .button:hover {
+      background-color: #58427c;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <div class="container">
       <h1>Fleelax</h1>
@@ -21,26 +140,27 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Sobre a Fleelax</h2>
+    <p>Conectando freelancers e clientes de forma simples e eficiente.</p>
+    <a href="#!" class="button">Cadastre-se agora</a>
+  </section>
+
   <div class="container">
-    <section class="hero">
-      <h2>Sobre a Fleelax</h2>
-      <p>A Fleelax é uma plataforma de freelancers criada para conectar profissionais qualificados a empresas e empreendedores que buscam serviços especializados.</p>
+    <!-- About Content -->
+    <section class="about-content">
+      <h2>Quem Somos</h2>
+      <p>Fleelax é uma plataforma inovadora que conecta freelancers qualificados com empresas e empreendedores em busca de profissionais para seus projetos. Nossa missão é oferecer uma experiência segura e simples para que freelancers e clientes possam realizar suas transações com facilidade.</p>
+      <p>Acreditamos que o trabalho remoto é o futuro e queremos facilitar esse processo, proporcionando uma plataforma intuitiva para todos os tipos de serviços, desde desenvolvimento web até consultoria jurídica.</p>
     </section>
 
-    <section>
-      <h3>Missão</h3>
-      <p>Oferecer uma plataforma segura e prática para freelancers e clientes se encontrarem e realizarem projetos de sucesso juntos.</p>
-    </section>
-
-    <section>
-      <h3>Visão</h3>
-      <p>Nos tornarmos a principal plataforma de freelancing da América Latina, com qualidade e compromisso.</p>
-    </section>
-
-    <section>
-      <h3>Valores</h3>
-      <p>Inovação, transparência, e parceria para promover o crescimento profissional e empresarial.</p>
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Pronto para começar?</h2>
+      <a href="cadastro-freelancer.html" class="button">Cadastre-se agora</a>
     </section>
   </div>
+
 </body>
 </html>
