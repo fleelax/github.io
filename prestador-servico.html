@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestador de Serviço - Fleelax</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .button {
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+        }
+        .client-form input, .client-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .client-form button {
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .client-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Prestador de Serviço</h1>
+        <p>Se você é um profissional e deseja oferecer seus serviços no Fleelax, cadastre-se aqui!</p>
+
+        <div class="section">
+            <h2>Preencha os dados para criar seu perfil</h2>
+            <form class="client-form">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <input type="text" name="servico" placeholder="Serviço que você oferece" required>
+                <textarea name="descricao" placeholder="Descreva seus serviços" required></textarea>
+                <input type="text" name="preco" placeholder="Preço (por hora ou serviço)" required>
+                <select name="disponibilidade" required>
+                    <option value="">Disponibilidade</option>
+                    <option value="tempo-integral">Tempo Integral</option>
+                    <option value="meio-turno">Meio Período</option>
+                    <option value="freelancer">Freelancer</option>
+                </select>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
