@@ -1,119 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Fleelax</title>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-        }
-        h1 {
-            color: #2f4f4f;
-        }
-        p {
-            color: #555;
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        /* Estilo para o menu */
-        nav {
-            background-color: #333;
-            width: 100%;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            margin: 0 10px;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        /* Seção de missão */
-        .missao {
-            background-color: #fff;
-            padding: 40px 20px;
-            margin-top: 80px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            max-width: 800px;
-            width: 100%;
-        }
-        .missao h2 {
-            color: #2f4f4f;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .missao p {
-            font-size: 1.2em;
-            color: #666;
-            text-align: left;
-            line-height: 1.6;
-        }
-        /* Estilo de rodapé */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-size: 1em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Fleelax</title>
+  <link rel="stylesheet" href="style.css"> <!-- Referência ao arquivo CSS -->
 </head>
 <body>
-    <!-- Menu de navegação -->
-    <nav>
-        <a href="index.html">Home</a>
+  <header>
+    <div class="container">
+      <h1>Fleelax</h1>
+      <nav>
+        <a href="index.html">Início</a>
         <a href="sobre.html">Sobre</a>
+        <a href="como-funciona.html">Como Funciona</a>
         <a href="servicos.html">Serviços</a>
-        <a href="contato.html">Contato</a>
-    </nav>
-
-    <h1>Sobre o Fleelax</h1>
-    <p>
-        Fleelax é uma plataforma dedicada a conectar freelancers com clientes que precisam de serviços especializados.
-        Nosso objetivo é facilitar o processo de contratação e garantir que tanto prestadores de serviços quanto clientes
-        tenham uma experiência de qualidade e segura. Aqui, você pode oferecer seus serviços ou contratar profissionais
-        com diversas habilidades, desde design até programação.
-    </p>
-
-    <!-- Seção de missão -->
-    <div class="missao">
-        <h2>Missão do Fleelax</h2>
-        <p>
-            Desde o início, nossa missão tem sido transformar o mercado freelancer, proporcionando uma experiência
-            fluida e confiável para todos os usuários. Acreditamos no poder da colaboração e na criação de um espaço
-            onde profissionais e empresas possam crescer juntos. Ao utilizar o Fleelax, você está fazendo parte de uma
-            comunidade dedicada ao sucesso.
-        </p>
+        <a href="faq.html">FAQ</a>
+        <a href="login.html">Login</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Rodapé -->
-    <footer>
-        © 2025 Fleelax - Todos os direitos reservados
-    </footer>
+  <div class="container">
+    <section class="hero">
+      <h2>Sobre a Fleelax</h2>
+      <p>A Fleelax é uma plataforma de freelancers criada para conectar profissionais qualificados a empresas e empreendedores que buscam serviços especializados.</p>
+    </section>
+
+    <section>
+      <h3>Missão</h3>
+      <p>Oferecer uma plataforma segura e prática para freelancers e clientes se encontrarem e realizarem projetos de sucesso juntos.</p>
+    </section>
+
+    <section>
+      <h3>Visão</h3>
+      <p>Nos tornarmos a principal plataforma de freelancing da América Latina, com qualidade e compromisso.</p>
+    </section>
+
+    <section>
+      <h3>Valores</h3>
+      <p>Inovação, transparência, e parceria para promover o crescimento profissional e empresarial.</p>
+    </section>
+  </div>
 </body>
 </html>
