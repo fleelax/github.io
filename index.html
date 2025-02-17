@@ -16,12 +16,6 @@
       color: #333;
       line-height: 1.6;
     }
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
     header {
       background: #fff;
       padding: 20px 0;
@@ -60,9 +54,11 @@
       border-radius: 8px;
       margin-bottom: 40px;
       color: #fff;
+      position: relative;
     }
     .hero h2 {
-      font-size: 2.2em;
+      font-size: 2.6em;
+      font-weight: bold;
       margin-bottom: 20px;
     }
     .hero p {
@@ -82,6 +78,22 @@
     }
     .hero .button:hover {
       transform: scale(1.05);
+    }
+    .cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6b5b95;
+      color: white;
+      padding: 20px;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .cta:hover {
+      transform: scale(1.1);
     }
     /* Filtros de Pesquisa */
     .filters {
@@ -198,72 +210,6 @@
       color: #666;
       margin-left: 10px;
     }
-    /* Call to Action */
-    .cta {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .cta h2 {
-      font-size: 1.8em;
-      margin-bottom: 15px;
-      color: #333;
-    }
-    .cta .button {
-      padding: 15px 30px;
-      background-color: #6b5b95;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .cta .button:hover {
-      background-color: #58427c;
-    }
-    /* Área de Autenticação */
-    .auth {
-      background: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      border: 1px solid #eaeaea;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      margin-bottom: 40px;
-      max-width: 500px;
-      margin: 0 auto 40px auto;
-      text-align: center;
-    }
-    .auth h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .auth form input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background: #fff;
-      color: #333;
-    }
-    .auth form button {
-      width: 100%;
-      padding: 15px;
-      background-color: #ff6f61;
-      border: none;
-      color: #fff;
-      font-size: 1.1em;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .auth form button:hover {
-      background-color: #e55b4d;
-    }
-    .auth p {
-      margin-top: 10px;
-      color: #555;
-    }
   </style>
 </head>
 <body>
@@ -276,9 +222,8 @@
         <a href="#">Como Funciona</a>
         <a href="#">Categorias</a>
         <a href="#">FAQ</a>
-        <a href="#">Contratar um Prestador</a>
-        <a href="#">Cadastrar-se</a>
-        <a href="#">Fazer Login</a>
+        <a href="#">Login</a>
+        <a href="#">Prestador de Serviço</a> <!-- Aqui o link de prestador de serviço -->
       </nav>
     </div>
   </header>
@@ -286,40 +231,28 @@
   <div class="container">
     <!-- Hero Section -->
     <section class="hero">
-      <h2>Encontre os melhores freelancers!</h2>
-      <p>Explore uma variedade de serviços profissionais para sua empresa ou projeto.</p>
-      <a href="#!" class="button">Comece agora</a>
+      <h2>Conectamos você aos melhores freelancers do mercado!</h2>
+      <p>Encontre ou ofereça serviços incríveis para o seu projeto.</p>
+      <a href="#!" class="button">Encontrar Freelancer</a>
+      <a href="#!" class="button">Quero Oferecer Meus Serviços</a>
     </section>
 
-    <!-- Filtros de Pesquisa -->
-    <div class="filters">
-      <input type="text" placeholder="Pesquise por serviço...">
-      <select>
-        <option value="">Categoria</option>
-        <option value="web">Desenvolvimento Web</option>
-        <option value="design">Design Gráfico</option>
-        <option value="marketing">Marketing Digital</option>
-        <option value="escrita">Redação</option>
-        <option value="consultoria">Consultoria</option>
-        <option value="financeiro">Consultoria Financeira</option>
-        <option value="fotografia">Fotografia e Vídeo</option>
-        <option value="tradução">Tradução e Interpretação</option>
-        <option value="programacao">Programação</option>
-        <option value="suporte">Suporte Técnico</option>
-        <option value="legal">Consultoria Jurídica</option>
-        <option value="redesocial">Gestão de Redes Sociais</option>
-        <option value="copywriting">Copywriting</option>
-      </select>
-      <select>
-        <option value="">Região</option>
-        <option value="norte">Norte</option>
-        <option value="nordeste">Nordeste</option>
-        <option value="sudeste">Sudeste</option>
-        <option value="sul">Sul</option>
-        <option value="centro-oeste">Centro-Oeste</option>
-      </select>
-      <button>Filtrar</button>
-    </div>
+    <!-- Como Funciona -->
+    <section class="how-it-works">
+      <h2>Como Funciona?</h2>
+      <div>
+        <p>1️⃣ Publique um projeto ou pesquise um freelancer</p>
+        <p>2️⃣ Converse e negocie diretamente</p>
+        <p>3️⃣ Contrate e acompanhe o serviço</p>
+      </div>
+    </section>
+
+    <!-- Destaques da Semana -->
+    <section class="highlights">
+      <h2>Destaques da Semana</h2>
+      <p>Seja um dos primeiros freelancers a se cadastrar e ganhe mais visibilidade!</p>
+      <p>Freelancers em breve: encontre talentos exclusivos aqui!</p>
+    </section>
 
     <!-- Categorias de Serviços -->
     <section class="categories">
@@ -336,87 +269,33 @@
         <p>Estratégias de SEO, Ads, Social Media e mais.</p>
       </div>
       <div class="category">
-        <h3>Redação</h3>
-        <p>Criação de conteúdo para blogs, sites e mais.</p>
-      </div>
-      <div class="category">
-        <h3>Consultoria</h3>
-        <p>Consultoria em áreas como gestão, TI, e mais.</p>
-      </div>
-      <div class="category">
-        <h3>Consultoria Financeira</h3>
-        <p>Orientação sobre finanças pessoais e empresariais.</p>
-      </div>
-      <div class="category">
-        <h3>Fotografia e Vídeo</h3>
-        <p>Serviços de fotografia profissional e edição de vídeo.</p>
-      </div>
-      <div class="category">
-        <h3>Tradução e Interpretação</h3>
-        <p>Serviços de tradução de documentos e interpretação.</p>
-      </div>
-      <div class="category">
-        <h3>Programação</h3>
-        <p>Desenvolvimento de software, aplicativos e sistemas.</p>
-      </div>
-      <div class="category">
-        <h3>Suporte Técnico</h3>
-        <p>Assistência em TI, manutenção de sistemas e redes.</p>
-      </div>
-      <div class="category">
         <h3>Consultoria Jurídica</h3>
-        <p>Consultoria em áreas jurídicas e empresariais.</p>
-      </div>
-      <div class="category">
-        <h3>Gestão de Redes Sociais</h3>
-        <p>Gestão de contas e estratégias nas redes sociais.</p>
-      </div>
-      <div class="category">
-        <h3>Copywriting</h3>
-        <p>Redação persuasiva para campanhas e anúncios.</p>
+        <p>Assessoria legal em diferentes áreas do direito.</p>
       </div>
     </section>
 
     <!-- Depoimentos -->
     <section class="reviews">
       <h2>O que nossos clientes dizem</h2>
-      <p>"A Fleelax me ajudou a encontrar profissionais incríveis para o meu projeto. Muito satisfeita!"</p>
-      <p>"Excelente plataforma! Consegui contratar um designer maravilhoso para o meu negócio."</p>
+      <p>"Fleelax foi a plataforma que nos conectou aos melhores profissionais! Super recomendo!" - João Silva</p>
+      <p>"Encontrei o freelancer perfeito para o meu projeto! Muito simples e rápido." - Ana Souza</p>
     </section>
 
     <!-- FAQ -->
     <section class="faq">
       <h2>Perguntas Frequentes</h2>
       <div class="faq-item">
-        <h3>Como posso contratar um prestador de serviço?</h3>
-        <p>Você pode buscar prestadores de serviço diretamente pela barra de pesquisa ou explorar as categorias disponíveis.</p>
+        <h3>Como posso me cadastrar?</h3>
+        <p>É simples! Basta clicar em "Comece Agora" e preencher seu cadastro.</p>
       </div>
       <div class="faq-item">
-        <h3>Como me cadastrar como freelancer?</h3>
-        <p>Basta clicar no botão "Cadastrar-se" no topo da página e preencher o formulário de cadastro.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Preciso pagar uma taxa para usar a plataforma?</h3>
-        <p>A plataforma é gratuita para freelancers, mas podemos cobrar uma taxa sobre os pagamentos realizados.</p>
+        <h3>Quais são as formas de pagamento?</h3>
+        <p>Você pode pagar diretamente pelo site usando cartão de crédito ou transferência bancária.</p>
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-      <h2>Pronto para começar a contratar ou oferecer serviços?</h2>
-      <a href="#!" class="button">Cadastre-se agora</a>
-    </section>
-
-    <!-- Área de Autenticação -->
-    <section class="auth">
-      <h2>Login</h2>
-      <form action="">
-        <input type="email" placeholder="E-mail" required />
-        <input type="password" placeholder="Senha" required />
-        <button type="submit">Entrar</button>
-      </form>
-      <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-    </section>
+    <!-- Botão de Ação -->
+    <div class="cta">Comece Agora</div>
   </div>
 </body>
 </html>
