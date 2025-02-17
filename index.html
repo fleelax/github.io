@@ -13,7 +13,7 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fafafa;
+      background-color: #f0f4f8;
       color: #333;
       line-height: 1.6;
     }
@@ -27,12 +27,12 @@
     header {
       background: #fff;
       padding: 20px 0;
-      border-bottom: 1px solid #eaeaea;
+      border-bottom: 3px solid #ff6f61;
       margin-bottom: 20px;
     }
     header h1 {
       text-align: center;
-      font-size: 2.4em;
+      font-size: 2.6em;
       color: #333;
       margin-bottom: 10px;
     }
@@ -44,44 +44,46 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #555;
-      font-weight: 500;
+      color: #6b5b95;
+      font-weight: 600;
       padding: 5px 10px;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease, background 0.3s ease;
+      border-radius: 4px;
     }
     nav a:hover {
-      color: #222;
+      color: #fff;
+      background: #6b5b95;
     }
-    /* Seção Hero */
+    /* Seção Hero com gradiente */
     .hero {
-      background: #f5f5f5;
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #ff6f61, #f7b733);
+      padding: 70px 20px;
       text-align: center;
       border-radius: 8px;
       margin-bottom: 40px;
+      color: #fff;
     }
     .hero h2 {
-      font-size: 2em;
+      font-size: 2.2em;
       margin-bottom: 20px;
-      color: #333;
     }
     .hero p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      color: #555;
+      font-size: 1.3em;
+      margin-bottom: 30px;
     }
     .hero .button {
       padding: 15px 30px;
-      background-color: #444;
-      color: #fff;
+      background-color: #fff;
+      color: #ff6f61;
       border: none;
       border-radius: 5px;
       text-decoration: none;
       font-size: 1.1em;
-      transition: background-color 0.3s ease;
+      font-weight: 600;
+      transition: transform 0.3s ease;
     }
     .hero .button:hover {
-      background-color: #333;
+      transform: scale(1.05);
     }
     /* Seção Sobre */
     .about {
@@ -117,7 +119,7 @@
     }
     .filters button {
       padding: 10px 20px;
-      background-color: #444;
+      background-color: #ff6f61;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -125,7 +127,7 @@
       transition: background-color 0.3s ease;
     }
     .filters button:hover {
-      background-color: #333;
+      background-color: #e55b4d;
     }
     /* Categorias de Serviços */
     .categories {
@@ -142,16 +144,17 @@
       padding: 20px;
       width: 260px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .category:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     }
     .category h3 {
       font-size: 1.3em;
       margin-bottom: 10px;
-      color: #444;
+      color: #ff6f61;
     }
     .category p {
       font-size: 0.95em;
@@ -189,10 +192,14 @@
       margin-left: auto;
       margin-right: auto;
       text-align: left;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     }
     .faq-item h3 {
       font-size: 1.1em;
-      color: #444;
+      color: #ff6f61;
     }
     .faq-item p {
       font-size: 0.95em;
@@ -211,7 +218,7 @@
     }
     .cta .button {
       padding: 15px 30px;
-      background-color: #444;
+      background-color: #6b5b95;
       color: #fff;
       border: none;
       border-radius: 5px;
@@ -220,7 +227,7 @@
       transition: background-color 0.3s ease;
     }
     .cta .button:hover {
-      background-color: #333;
+      background-color: #58427c;
     }
     /* Área de Autenticação */
     .auth {
@@ -228,7 +235,7 @@
       padding: 30px;
       border-radius: 8px;
       border: 1px solid #eaeaea;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       margin-bottom: 40px;
       max-width: 500px;
       margin: 0 auto 40px auto;
@@ -250,7 +257,7 @@
     .auth form button {
       width: 100%;
       padding: 15px;
-      background-color: #444;
+      background-color: #ff6f61;
       border: none;
       color: #fff;
       font-size: 1.1em;
@@ -259,14 +266,14 @@
       transition: background-color 0.3s ease;
     }
     .auth form button:hover {
-      background-color: #333;
+      background-color: #e55b4d;
     }
     .auth p {
       margin-top: 10px;
       color: #555;
     }
     .auth a {
-      color: #444;
+      color: #6b5b95;
       text-decoration: none;
     }
     .auth a:hover {
@@ -319,7 +326,7 @@
     <!-- Seção Hero -->
     <section class="hero">
       <h2>Bem-vindo ao Fleelax!</h2>
-      <p>Encontre os melhores freelancers ou contrate um prestador de serviço para o seu projeto com facilidade.</p>
+      <p>Encontre os melhores freelancers ou contrate um prestador de serviço para transformar seu projeto.</p>
       <a href="cadastro.html" class="button">Cadastre-se Agora</a>
     </section>
 
@@ -327,7 +334,7 @@
     <section class="about">
       <h2>Sobre o Fleelax</h2>
       <p>
-        O Fleelax é uma plataforma moderna e intuitiva que conecta freelancers talentosos a clientes que buscam serviços de alta qualidade. Seja para design, desenvolvimento, marketing ou consultoria, nossa missão é facilitar a conexão entre profissionais e empresas.
+        O Fleelax é uma plataforma dinâmica que conecta freelancers talentosos a clientes que buscam soluções criativas e inovadoras. Aqui você encontra profissionais para design, desenvolvimento, marketing, consultoria e muito mais!
       </p>
     </section>
 
@@ -389,7 +396,7 @@
       </div>
       <div class="category">
         <h3>Edição de Áudio e Vídeo</h3>
-        <p>Produção e edição para podcasts e conteúdos audiovisuais.</p>
+        <p>Edição de podcasts, vídeos corporativos e trilhas sonoras.</p>
       </div>
       <div class="category">
         <h3>Gestão de Projetos</h3>
