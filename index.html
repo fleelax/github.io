@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleelax - Freelancers</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Para ícones -->
     <style>
         body {
-            background-color: #f0f8ff;  /* Cor de fundo suave */
-            font-family: Arial, sans-serif;  /* Fonte simples e legível */
-            color: #333;  /* Cor do texto */
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;  /* Centraliza o texto */
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;  /* Faz o conteúdo ocupar toda a altura da tela */
-            flex-direction: column; /* Organiza os itens em coluna */
+            flex-direction: column;
         }
-        h1 {
-            color: #2f4f4f;  /* Cor do título */
+        h1, h2 {
+            color: #2f4f4f;
         }
         p {
-            color: #555;  /* Cor do texto do parágrafo */
-            font-size: 1.2em;  /* Tamanho do texto */
-        }
-        nav {
-            margin-top: 20px;
+            color: #555;
+            font-size: 1.2em;
         }
         nav a {
             margin: 10px;
@@ -35,26 +30,36 @@
             font-size: 1.2em;
             color: #2f4f4f;
         }
-        nav a:hover {
-            color: #1e90ff;
+        .benefits, .how-it-works, .testimonials {
+            margin-top: 30px;
         }
-        .icons {
-            margin-top: 20px;
+        .button {
+            padding: 15px 25px;
+            background-color: #2f4f4f;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .icons i {
-            font-size: 2em;
-            margin: 0 15px;
-            color: #2f4f4f;
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        .icons i:hover {
-            color: #1e90ff;
+        .category {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <h1>Bem-vindo ao Fleelax!</h1>
     <p>Plataforma para freelancers oferecerem seus serviços.</p>
-    
+
     <!-- Menu de navegação -->
     <nav>
         <a href="index.html">Home</a>
@@ -63,11 +68,46 @@
         <a href="contato.html">Contato</a>
     </nav>
 
-    <!-- Ícones de redes sociais -->
-    <div class="icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+    <!-- Seção de Benefícios para Freelancers -->
+    <div class="benefits">
+        <h2>Por que ser um freelancer no Fleelax?</h2>
+        <p>Com o Fleelax, você tem liberdade para trabalhar de qualquer lugar, a qualquer hora. Conecte-se com clientes que precisam dos seus serviços e tenha acesso a uma rede de oportunidades incríveis.</p>
     </div>
+
+    <!-- Seção de Categorias de Serviços -->
+    <div class="categories">
+        <div class="category">
+            <h3>Design Gráfico</h3>
+            <p>Criamos logos, banners e todo tipo de material visual!</p>
+        </div>
+        <div class="category">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites, lojas virtuais e aplicativos.</p>
+        </div>
+        <div class="category">
+            <h3>Redação e Tradução</h3>
+            <p>Textos, artigos, tradução para vários idiomas.</p>
+        </div>
+    </div>
+
+    <!-- Seção de Depoimentos -->
+    <div class="testimonials">
+        <h2>O que nossos usuários dizem:</h2>
+        <p>"Fleelax foi fundamental para eu encontrar clientes e expandir meu trabalho como designer!" - Ana Souza</p>
+        <p>"Uma plataforma fácil de usar e com oportunidades de qualidade. Recomendo a todos!" - João Pereira</p>
+    </div>
+
+    <!-- Como Funciona -->
+    <div class="how-it-works">
+        <h2>Como Funciona o Fleelax?</h2>
+        <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
+    </div>
+
+    <!-- Call to Action -->
+    <div>
+        <h2>Pronto para começar?</h2>
+        <button class="button" onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
+    </div>
+
 </body>
 </html>
