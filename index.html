@@ -137,93 +137,39 @@
         .client-form button:hover {
             background-color: #218838;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Bem-vindo ao Fleelax!</h1>
-        <p>Plataforma para freelancers oferecerem seus serviços e para clientes contratarem os melhores profissionais.</p>
 
-        <!-- Menu de navegação -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+        /* Seção para clientes interessados em contratar freelancers */
+        .client-info {
+            background-color: #e7f5ff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-        <!-- Seção de Benefícios para Freelancers -->
-        <div class="section benefits">
-            <h2>Por que ser um freelancer no Fleelax?</h2>
-            <p>Com o Fleelax, você tem liberdade para trabalhar de qualquer lugar, a qualquer hora. Conecte-se com clientes que precisam dos seus serviços e tenha acesso a uma rede de oportunidades incríveis.</p>
-        </div>
+        .client-info h2 {
+            color: #0056b3;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
 
-        <!-- Seção de Categorias de Serviços -->
-        <div class="categories">
-            <div class="category">
-                <h3>Design Gráfico</h3>
-                <p>Criamos logos, banners e todo tipo de material visual!</p>
-            </div>
-            <div class="category">
-                <h3>Desenvolvimento Web</h3>
-                <p>Criação de sites, lojas virtuais e aplicativos.</p>
-            </div>
-            <div class="category">
-                <h3>Redação e Tradução</h3>
-                <p>Textos, artigos, tradução para vários idiomas.</p>
-            </div>
-            <div class="category">
-                <h3>Consultoria Empresarial</h3>
-                <p>Ajudamos sua empresa a crescer com estratégias personalizadas.</p>
-            </div>
-            <div class="category">
-                <h3>Marketing Digital</h3>
-                <p>Gestão de redes sociais e campanhas publicitárias.</p>
-            </div>
-            <div class="category">
-                <h3>Fotografia</h3>
-                <p>Fotos profissionais para eventos, produtos e mais.</p>
-            </div>
-        </div>
+        .client-info p {
+            font-size: 1.1em;
+            color: #444;
+        }
 
-        <!-- Seção de Depoimentos -->
-        <div class="section testimonials">
-            <h2>O que nossos usuários dizem:</h2>
-            <p>"Fleelax foi fundamental para eu encontrar clientes e expandir meu trabalho como designer!" - Ana Souza</p>
-            <p>"Uma plataforma fácil de usar e com oportunidades de qualidade. Recomendo a todos!" - João Pereira</p>
-        </div>
+        .client-info button {
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-        <!-- Como Funciona -->
-        <div class="section how-it-works">
-            <h2>Como Funciona o Fleelax?</h2>
-            <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
-        </div>
-
-        <!-- Formulário de cadastro para clientes -->
-        <div class="client-form">
-            <h2>Cadastre-se para contratar freelancers</h2>
-            <form action="#" method="POST">
-                <input type="text" name="nome" placeholder="Nome Completo" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="text" name="empresa" placeholder="Nome da Empresa" required>
-                <select name="servico" required>
-                    <option value="">Selecione um serviço</option>
-                    <option value="Design Gráfico">Design Gráfico</option>
-                    <option value="Desenvolvimento Web">Desenvolvimento Web</option>
-                    <option value="Redação e Tradução">Redação e Tradução</option>
-                    <option value="Consultoria Empresarial">Consultoria Empresarial</option>
-                    <option value="Marketing Digital">Marketing Digital</option>
-                    <option value="Fotografia">Fotografia</option>
-                </select>
-                <button type="submit">Cadastrar</button>
-            </form>
-        </div>
-
-        <!-- Call to Action -->
-        <div>
-            <h2>Pronto para começar?</h2>
-            <button class="button" onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
-        </div>
-    </div>
-</body>
-</html>
+        .client-info button:hover {
+            background-color: #218838;
+        }
+    </styl
