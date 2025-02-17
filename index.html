@@ -1,253 +1,398 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fleelax - Freelancers</title>
-    <style>
-        body {
-            background-color: #f9f9f9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-
-        /* Seção centralizada e com leve sombra */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            padding: 40px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        /* Títulos */
-        h1, h2 {
-            color: #333;
-            font-weight: 600;
-        }
-
-        /* Parágrafos e textos */
-        p {
-            color: #666;
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        /* Menu de navegação */
-        nav a {
-            margin: 10px;
-            text-decoration: none;
-            font-size: 1em;
-            color: #555;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #007bff;
-        }
-
-        .button {
-            padding: 15px 25px;
-            background-color: #007bff;
-            color: white;
-            font-size: 1.1em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Seções de conteúdo com fundo claro */
-        .section {
-            margin-top: 40px;
-            padding: 30px;
-            background-color: #f3f3f3;
-            border-radius: 8px;
-        }
-
-        /* Categorias de serviços */
-        .categories {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .category {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            width: 200px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .category h3 {
-            font-size: 1.2em;
-            color: #333;
-            font-weight: 600;
-        }
-
-        .category p {
-            color: #777;
-            font-size: 1em;
-        }
-
-        /* Formulário para cadastro de clientes */
-        .client-form {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-
-        .client-form input, .client-form select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .client-form button {
-            padding: 15px 25px;
-            background-color: #28a745;
-            color: white;
-            font-size: 1.1em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .client-form button:hover {
-            background-color: #218838;
-        }
-
-        /* Seção para clientes interessados em contratar freelancers */
-        .client-info {
-            background-color: #e7f5ff;
-            padding: 40px;
-            border-radius: 8px;
-            margin-top: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .client-info h2 {
-            color: #0056b3;
-            font-size: 1.6em;
-            font-weight: 600;
-        }
-
-        .client-info p {
-            font-size: 1.1em;
-            color: #444;
-        }
-
-        .client-info button {
-            padding: 15px 30px;
-            background-color: #28a745;
-            color: white;
-            font-size: 1.1em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .client-info button:hover {
-            background-color: #218838;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleelax - Plataforma de Freelancers</title>
+  <style>
+    /* Reset e configurações básicas */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    /* Header e Navegação */
+    header {
+      background: #fff;
+      padding: 20px 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+    header h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2.2em;
+      color: #333;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #222;
+    }
+    /* Hero Section */
+    .hero {
+      background: #f5f5f5;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .hero .button {
+      padding: 15px 30px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    .hero .button:hover {
+      background-color: #333;
+    }
+    /* Filtros de Pesquisa */
+    .filters {
+      margin: 40px 0;
+      text-align: center;
+    }
+    .filters select,
+    .filters input[type="text"] {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      min-width: 150px;
+      background: #fff;
+      color: #333;
+    }
+    .filters button {
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .filters button:hover {
+      background-color: #333;
+    }
+    /* Categorias de Serviços */
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .category {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
+    .category h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #444;
+    }
+    .category p {
+      font-size: 0.95em;
+      color: #666;
+    }
+    /* Avaliações */
+    .reviews {
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    .reviews h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .reviews p {
+      margin-bottom: 10px;
+      font-style: italic;
+      color: #555;
+    }
+    /* FAQ */
+    .faq {
+      margin-bottom: 40px;
+    }
+    .faq h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .faq-item h3 {
+      font-size: 1.1em;
+      color: #444;
+    }
+    .faq-item p {
+      font-size: 0.95em;
+      color: #666;
+      margin-left: 10px;
+    }
+    /* Área de Autenticação (Login/Cadastro) */
+    .auth {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #eaeaea;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+      margin-bottom: 40px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .auth h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .auth form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      color: #333;
+    }
+    .auth form button {
+      width: 100%;
+      padding: 15px;
+      background-color: #444;
+      border: none;
+      color: #fff;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .auth form button:hover {
+      background-color: #333;
+    }
+    .auth p {
+      text-align: center;
+      margin-top: 10px;
+      color: #555;
+    }
+    .auth a {
+      color: #444;
+      text-decoration: none;
+    }
+    .auth a:hover {
+      text-decoration: underline;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #eaeaea;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Cabeçalho com Navegação -->
+  <header>
     <div class="container">
-        <h1>Bem-vindo ao Fleelax!</h1>
-        <p>Plataforma para freelancers oferecerem seus serviços e para clientes contratarem os melhores profissionais.</p>
-
-        <!-- Menu de navegação -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">Contato</a>
-            <a href="procurando-freelancer.html">Procurando Freelancer</a>
-            <a href="prestador-servico.html">Prestador de Serviço</a>
-        </nav>
-
-        <!-- Seção de Benefícios para Freelancers -->
-        <div class="section benefits">
-            <h2>Por que ser um freelancer no Fleelax?</h2>
-            <p>Com o Fleelax, você tem liberdade para trabalhar de qualquer lugar, a qualquer hora. Conecte-se com clientes que precisam dos seus serviços e tenha acesso a uma rede de oportunidades incríveis.</p>
-        </div>
-
-        <!-- Seção de Categorias de Serviços -->
-        <div class="categories">
-            <div class="category">
-                <h3>Design Gráfico</h3>
-                <p>Criamos logos, banners e todo tipo de material visual!</p>
-            </div>
-            <div class="category">
-                <h3>Desenvolvimento Web</h3>
-                <p>Criação de sites, lojas virtuais e aplicativos.</p>
-            </div>
-            <div class="category">
-                <h3>Redação e Tradução</h3>
-                <p>Textos, artigos, tradução para vários idiomas.</p>
-            </div>
-            <div class="category">
-                <h3>Consultoria Empresarial</h3>
-                <p>Ajudamos sua empresa a crescer com estratégias personalizadas.</p>
-            </div>
-            <div class="category">
-                <h3>Marketing Digital</h3>
-                <p>Gestão de redes sociais e campanhas publicitárias.</p>
-            </div>
-            <div class="category">
-                <h3>Fotografia</h3>
-                <p>Fotos profissionais para eventos, produtos e mais.</p>
-            </div>
-        </div>
-
-        <!-- Seção de Depoimentos -->
-        <div class="section testimonials">
-            <h2>O que nossos usuários dizem:</h2>
-            <p>"Fleelax foi fundamental para eu encontrar clientes e expandir meu trabalho como designer!" - Ana Souza</p>
-            <p>"Uma plataforma fácil de usar e com oportunidades de qualidade. Recomendo a todos!" - João Pereira</p>
-        </div>
-
-        <!-- Como Funciona -->
-        <div class="section how-it-works">
-            <h2>Como Funciona o Fleelax?</h2>
-            <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
-        </div>
-
-        <!-- Seção para Clientes Contratarem Freelancers -->
-        <div class="client-info">
-            <h2>Está buscando um freelancer?</h2>
-            <p>No Fleelax, você encontra os melhores profissionais para os mais variados serviços. Cadastre-se agora e encontre o talento ideal para sua empresa!</p>
-            <button onclick="window.location.href='cadastro-cliente.html'">Cadastre-se para Contratar</button>
-        </div>
-
-        <!-- Call to Action -->
-        <div>
-            <h2>Pronto para começar?</h2>
-            <button class="button" onclick="window.location.href='cadastro.html'">Cadastre-se Agora</button>
-        </div>
+      <h1>Fleelax</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+        <a href="procurando-freelancer.html">Procurando Freelancer</a>
+        <a href="prestador-servico.html">Prestador de Serviço</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
     </div>
+  </header>
+
+  <div class="container">
+    <!-- Seção Hero -->
+    <section class="hero">
+      <h2>Bem-vindo ao Fleelax!</h2>
+      <p>Encontre os melhores freelancers ou contrate um prestador de serviço para o seu projeto.</p>
+      <a href="cadastro.html" class="button">Cadastre-se Agora</a>
+    </section>
+
+    <!-- Filtros de Pesquisa -->
+    <section class="filters">
+      <input type="text" placeholder="Pesquisar serviços..." />
+      <select>
+        <option value="">Selecione a categoria</option>
+        <option value="design">Design Gráfico</option>
+        <option value="web">Desenvolvimento Web</option>
+        <option value="redacao">Redação e Tradução</option>
+        <option value="apps">Desenvolvimento de Aplicativos</option>
+        <option value="negocios">Consultoria de Negócios</option>
+        <option value="marketing">Marketing Digital</option>
+        <option value="foto-video">Fotografia e Vídeo</option>
+        <option value="ti">Consultoria de TI</option>
+        <option value="edicao">Edição de Áudio e Vídeo</option>
+        <option value="projetos">Gestão de Projetos</option>
+        <option value="criativa">Redação Criativa</option>
+        <option value="traducao">Tradução Especializada</option>
+        <option value="assistencia">Assistência Virtual</option>
+      </select>
+      <button>Aplicar Filtros</button>
+    </section>
+
+    <!-- Categorias de Serviços -->
+    <section class="categories">
+      <div class="category">
+        <h3>Design Gráfico</h3>
+        <p>Criamos logos, banners e todo tipo de material visual!</p>
+      </div>
+      <div class="category">
+        <h3>Desenvolvimento Web</h3>
+        <p>Criação de sites, lojas virtuais e aplicativos.</p>
+      </div>
+      <div class="category">
+        <h3>Redação e Tradução</h3>
+        <p>Textos, artigos e tradução para vários idiomas.</p>
+      </div>
+      <div class="category">
+        <h3>Desenvolvimento de Aplicativos</h3>
+        <p>Criação de aplicativos móveis e sistemas web.</p>
+      </div>
+      <div class="category">
+        <h3>Consultoria de Negócios</h3>
+        <p>Aconselhamento para startups, empresas e empreendedores.</p>
+      </div>
+      <div class="category">
+        <h3>Marketing Digital</h3>
+        <p>SEO, gerenciamento de redes sociais e anúncios pagos.</p>
+      </div>
+      <div class="category">
+        <h3>Fotografia e Vídeo</h3>
+        <p>Fotografia para eventos, edição de vídeos e filmagens promocionais.</p>
+      </div>
+      <div class="category">
+        <h3>Consultoria de TI</h3>
+        <p>Soluções em TI, segurança digital e suporte técnico.</p>
+      </div>
+      <div class="category">
+        <h3>Edição de Áudio e Vídeo</h3>
+        <p>Edição de podcasts, vídeos corporativos e trilhas sonoras.</p>
+      </div>
+      <div class="category">
+        <h3>Gestão de Projetos</h3>
+        <p>Coordenação e gestão de projetos para equipes e empresas.</p>
+      </div>
+      <div class="category">
+        <h3>Redação Criativa</h3>
+        <p>Criação de conteúdo para blogs, sites e redes sociais.</p>
+      </div>
+      <div class="category">
+        <h3>Tradução Especializada</h3>
+        <p>Tradução de documentos técnicos e textos especializados.</p>
+      </div>
+      <div class="category">
+        <h3>Assistência Virtual</h3>
+        <p>Serviços remotos de agendamento, atendimento e organização.</p>
+      </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section class="reviews">
+      <h2>Avaliações</h2>
+      <p>"Excelente plataforma! Consegui encontrar ótimos freelancers para meus projetos." - Cliente A</p>
+      <p>"Fleelax me ajudou a expandir meu negócio e encontrar clientes de qualidade." - Freelancer B</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-item">
+        <h3>Como me cadastro como freelancer?</h3>
+        <p>Basta clicar em "Cadastro" no menu e preencher o formulário com suas informações.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Como contratar um freelancer?</h3>
+        <p>Utilize os filtros ou navegue pelas categorias para encontrar o serviço desejado e entre em contato diretamente com o profissional.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Como funciona o pagamento?</h3>
+        <p>O pagamento pode ser feito diretamente na plataforma com integração a serviços como PayPal ou Stripe.</p>
+      </div>
+    </section>
+
+    <!-- Área de Autenticação: Login -->
+    <section class="auth">
+      <h2>Entrar na Plataforma</h2>
+      <form action="login-process.php" method="POST">
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <input type="password" name="senha" placeholder="Sua senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <p>
+        Não tem uma conta?
+        <a href="cadastro.html">Cadastre-se aqui</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fleelax. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
