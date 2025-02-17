@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;  /* Faz o conteúdo ocupar toda a altura da tela */
+            flex-direction: column; /* Organiza os itens em coluna */
         }
         h1 {
             color: #2f4f4f;  /* Cor do título */
@@ -24,10 +25,24 @@
             color: #555;  /* Cor do texto do parágrafo */
             font-size: 1.2em;  /* Tamanho do texto */
         }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: #2f4f4f;
+        }
     </style>
 </head>
 <body>
     <h1>Bem-vindo ao Fleelax!</h1>
     <p>Plataforma para freelancers oferecerem seus serviços.</p>
+    
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 </body>
 </html>
