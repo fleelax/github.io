@@ -15,8 +15,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             flex-direction: column;
+            height: 100vh;
         }
         h1 {
             color: #2f4f4f;
@@ -24,12 +24,18 @@
         p {
             color: #555;
             font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
         /* Estilo para o menu */
         nav {
             background-color: #333;
             width: 100%;
             padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
@@ -41,6 +47,39 @@
         }
         nav a:hover {
             background-color: #575757;
+        }
+        /* Seção de missão */
+        .missao {
+            background-color: #fff;
+            padding: 40px 20px;
+            margin-top: 80px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .missao h2 {
+            color: #2f4f4f;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .missao p {
+            font-size: 1.2em;
+            color: #666;
+            text-align: left;
+            line-height: 1.6;
+        }
+        /* Estilo de rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -60,5 +99,21 @@
         tenham uma experiência de qualidade e segura. Aqui, você pode oferecer seus serviços ou contratar profissionais
         com diversas habilidades, desde design até programação.
     </p>
+
+    <!-- Seção de missão -->
+    <div class="missao">
+        <h2>Missão do Fleelax</h2>
+        <p>
+            Desde o início, nossa missão tem sido transformar o mercado freelancer, proporcionando uma experiência
+            fluida e confiável para todos os usuários. Acreditamos no poder da colaboração e na criação de um espaço
+            onde profissionais e empresas possam crescer juntos. Ao utilizar o Fleelax, você está fazendo parte de uma
+            comunidade dedicada ao sucesso.
+        </p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        © 2025 Fleelax - Todos os direitos reservados
+    </footer>
 </body>
 </html>
