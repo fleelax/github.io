@@ -6,8 +6,8 @@
     <title>Fleelax - Freelancers</title>
     <style>
         body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             margin: 0;
             padding: 0;
@@ -18,48 +18,63 @@
             flex-direction: column;
         }
 
-        /* Fundo escuro e seções destacadas */
-        .section {
-            background-color: #2f4f4f;
-            color: white;
-            padding: 40px 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            width: 80%;
+        /* Seção centralizada e com leve sombra */
+        .container {
+            width: 100%;
             max-width: 1200px;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         /* Títulos */
         h1, h2 {
-            color: #ffffff;
+            color: #333;
+            font-weight: 600;
         }
 
-        /* Parágrafos */
+        /* Parágrafos e textos */
         p {
-            color: #ddd;
-            font-size: 1.2em;
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
         }
 
         /* Menu de navegação */
         nav a {
             margin: 10px;
             text-decoration: none;
-            font-size: 1.2em;
-            color: #2f4f4f;
+            font-size: 1em;
+            color: #555;
+            font-weight: 500;
         }
 
-        .benefits, .how-it-works, .testimonials {
-            margin-top: 30px;
+        nav a:hover {
+            color: #007bff;
         }
 
         .button {
             padding: 15px 25px;
-            background-color: #2f4f4f;
+            background-color: #007bff;
             color: white;
-            font-size: 1.2em;
+            font-size: 1.1em;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Seções de conteúdo com fundo claro */
+        .section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
         }
 
         /* Categorias de serviços */
@@ -68,31 +83,66 @@
             justify-content: center;
             gap: 20px;
             margin-top: 30px;
+            flex-wrap: wrap;
         }
 
         .category {
-            background-color: #e0f7fa;
-            padding: 15px;
+            background-color: #ffffff;
+            padding: 20px;
             border-radius: 8px;
             width: 200px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* Seção com fundo claro */
-        .container {
-            width: 100%;
-            background-color: #f0f8ff;
+        .category h3 {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .category p {
+            color: #777;
+            font-size: 1em;
+        }
+
+        /* Formulário para cadastro de clientes */
+        .client-form {
+            background-color: #ffffff;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .client-form input, .client-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .client-form button {
+            padding: 15px 25px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .client-form button:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Bem-vindo ao Fleelax!</h1>
-        <p>Plataforma para freelancers oferecerem seus serviços.</p>
+        <p>Plataforma para freelancers oferecerem seus serviços e para clientes contratarem os melhores profissionais.</p>
 
         <!-- Menu de navegação -->
         <nav>
@@ -122,6 +172,18 @@
                 <h3>Redação e Tradução</h3>
                 <p>Textos, artigos, tradução para vários idiomas.</p>
             </div>
+            <div class="category">
+                <h3>Consultoria Empresarial</h3>
+                <p>Ajudamos sua empresa a crescer com estratégias personalizadas.</p>
+            </div>
+            <div class="category">
+                <h3>Marketing Digital</h3>
+                <p>Gestão de redes sociais e campanhas publicitárias.</p>
+            </div>
+            <div class="category">
+                <h3>Fotografia</h3>
+                <p>Fotos profissionais para eventos, produtos e mais.</p>
+            </div>
         </div>
 
         <!-- Seção de Depoimentos -->
@@ -135,6 +197,26 @@
         <div class="section how-it-works">
             <h2>Como Funciona o Fleelax?</h2>
             <p>1. Cadastre-se gratuitamente. <br> 2. Crie um perfil e adicione seus serviços. <br> 3. Conecte-se com clientes e comece a trabalhar!</p>
+        </div>
+
+        <!-- Formulário de cadastro para clientes -->
+        <div class="client-form">
+            <h2>Cadastre-se para contratar freelancers</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="text" name="empresa" placeholder="Nome da Empresa" required>
+                <select name="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="Design Gráfico">Design Gráfico</option>
+                    <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+                    <option value="Redação e Tradução">Redação e Tradução</option>
+                    <option value="Consultoria Empresarial">Consultoria Empresarial</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                    <option value="Fotografia">Fotografia</option>
+                </select>
+                <button type="submit">Cadastrar</button>
+            </form>
         </div>
 
         <!-- Call to Action -->
