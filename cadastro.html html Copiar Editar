@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleelax - Cadastro do Cliente</title>
+  <style>
+    /* Reset e configurações básicas */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.4em;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    form button {
+      padding: 12px;
+      margin-top: 10px;
+      background-color: #6b5b95;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #58427c;
+    }
+    .extra {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.95em;
+    }
+    .extra a {
+      color: #ff6f61;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .extra a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fleelax</h1>
+  </header>
+
+  <div class="container">
+    <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Cadastro do Cliente</h2>
+    <form action="cadastro-process.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome completo" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="password" name="senha" placeholder="Crie uma senha" required />
+      <input type="password" name="confirma_senha" placeholder="Confirme sua senha" required />
+      <!-- Você pode adicionar outros campos, como telefone ou nome da empresa, conforme necessário -->
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div class="extra">
+      <p>Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Fleelax. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
