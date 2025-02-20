@@ -5,7 +5,227 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Fleelax - Plataforma para freelancers oferecerem seus serviços." />
   <title>Fleelax - Plataforma de Freelancers</title>
-  <link rel="stylesheet" href="css/styles.css"> <!-- Incluindo o arquivo CSS externo -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+      margin-top: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .hero .button {
+      background-color: white;
+      color: #ff6f61;
+      padding: 10px 25px;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero .button:hover {
+      background-color: #fff;
+      color: #e55b4d;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px 0;
+    }
+
+    .filters input[type="text"],
+    .filters select {
+      padding: 12px;
+      font-size: 1em;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .filters button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .filters button:hover {
+      background-color: #e55b4d;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .category {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .category h3 {
+      font-size: 1.5em;
+      color: #ff6f61;
+    }
+
+    .reviews {
+      background-color: #fff;
+      text-align: center;
+      margin-top: 40px;
+      padding: 40px 0;
+    }
+
+    .reviews h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .reviews p {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .faq h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .faq-item h3 {
+      font-size: 1.4em;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .cta .button {
+      padding: 15px 40px;
+      font-size: 1.5em;
+    }
+
+    .auth {
+      background-color: #f4f4f4;
+      padding: 40px 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .auth input {
+      padding: 12px 20px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    .auth button {
+      padding: 12px 25px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .auth button:hover {
+      background-color: #e55b4d;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8em;
+      }
+      .filters {
+        flex-direction: column;
+        align-items: center;
+      }
+      .filters input[type="text"],
+      .filters select {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .category {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
